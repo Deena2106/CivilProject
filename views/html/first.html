@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <title>first page</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+
+        /* your-styles.css */
+
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Distribute cards evenly */
+    flex-wrap: wrap; /* Wrap cards to the next row if needed */
+    margin: 0 auto; /* Center the cards horizontally */
+    max-width: 960px; /* Adjust the maximum width as needed */
+    margin-right: 30px;
+}
+
+.card {
+    flex: 1; /* Equal width for all cards */
+    /* background: rgba(0, 0, 0, 0.6); */
+    /* border: 2px solid #000; Change border color to black */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: background 0.3s, transform 0.3s;
+}
+.card:hover {
+    background-color: #0F044C;
+    transform: scale(1.05);
+    border-color: #fff;
+}
+
+
+
+.text_align_center {
+    text-align: center;
+}
+
+.const i img {
+    width: 150px; /* Make the images a bit bigger */
+    height: 150px; /* Make the images a bit bigger */
+    border: 2px solid #fff;
+    padding: 10px;
+}
+
+.const span {
+    color: #fff;
+    font-size: 24px;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.main-layout {
+    padding: 50px 0;
+}
+
+    </style>
+  </head>
+  <!-- body -->
+
+  <body class="main-layout">
+    <div class="container">
+      <div class="card-container">
+        <div class="card" id="box">
+          <a target="_blank" href="table.php">
+            <div id="text_hover" class="const text_align_center">
+              <i><img src="../assets/image1.avif" alt="#" /></i>
+              <span>User</span>
+            </div>
+          </a>
+        </div>
+        <div class="card" id="box">
+          <a target="_blank" href="ngologin.php">
+            <div id="text_hover" class="const text_align_center">
+              <i><img src="../assets/image2.webp" alt="#" /></i>
+              <span>Builder</span>
+            </div>
+          </a>
+        </div>
+        <div class="card" id="box">
+          <a target="_blank" href="login.php">
+            <div id="text_hover" class="const text_align_center">
+              <i><img src="../assets/image3.avif" alt="#" /></i>
+              <span>Admin</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Your scripts here -->
+  </body>
+</html>

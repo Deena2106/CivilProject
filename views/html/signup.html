@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Future Home</title>
+    <link rel="stylesheet" href="../css/signup.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <script src="../js/signup.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-card">
+            <h1>Signup - Future Home</h1>
+            <form onclick="validateForm(event)">
+                <input type="text" id="name" placeholder="Enter Your User Name" required>
+                <br>
+                <input type="email" id="email" placeholder="Enter Your Email Address" required>
+                <br>
+                <input type="password" id="password" name="password"  placeholder="Enter a Password" required>
+                <br>
+                <input type="password" id="cpassword" name="cpassword"  placeholder="Enter a Confirm Password" required>
+                <br>
+                <input type="tel" id="phoneno" name="mobile"  placeholder="Enter a Mobile Number" required>
+                <br>
+                <h2></h2>
+                <button type="submit">Signup</button>
+                <h3 onclick="redirectToLogin()"> Click to Login Here </h3>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

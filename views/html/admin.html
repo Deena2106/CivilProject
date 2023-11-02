@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Home Admin</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+    <script src="../js/admin.js"></script>
+</head>
+<body>
+    <div class="container centered-container" id="loginpanel">
+        <div class="form-card">
+            <h1>Admin - Future Home</h1>
+            <form onsubmit="validateForm(event)">
+                <input type="text" id="id" placeholder="Enter Admin Id" required>
+                <br>
+                <input type="password" id="password" placeholder="Enter Your Password" required>
+                <br>
+                <h2></h2>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <div id="content" style="visibility: hidden;align-items: center; justify-content: center;" class="centered-container">
+        <div style="width: 100%; text-align: center;">
+            <input id="builderName" placeholder="Enter a Builder Name" style="margin: 10px;">
+            <input id="builderPassword" placeholder="Enter a Password" style="margin: 10px;">
+            <button onclick="addBuilder()">Add Builder</button>
+            <button onclick="window.location.href='/admin';">LogOut</button>
+        </div>
+        <table id="builderTable">
+            <thead>
+                <tr>
+                    <th>Builder Name</th>
+                    <th>Password</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="BuilderBody">
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

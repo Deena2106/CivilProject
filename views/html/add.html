@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Home - Add Project</title>
+    <link  rel="stylesheet" href="../css/add.css"/>
+</head>
+<body>
+    <form class="container" id="projectForm">
+        <h1>Add Project Details</h1>
+        <span>
+            <!-- Project Name and Identification Number -->
+            <input type="text" id="projectName" name="projectName" placeholder="Project Name" required>
+            <input type="text" id="projectID" name="projectID" placeholder="Identification Number" required><br>
+        </span>
+        <!-- Project Location -->
+        <span>
+            <input type="text" id="projectAddress" name="projectAddress" placeholder="Project Address" required>
+            <input type="text" id="coordinates" name="coordinates" placeholder="Coordinates (Lat, Long)"><br>
+        </span>
+        <!-- Project Owner/Client Information -->
+        <span>
+            <input type="text" id="ownerName" name="ownerName" placeholder="Owner/Client Name" required>
+            <input type="email" id="ownerEmail" name="ownerEmail" placeholder="Owner/Client Email" required><br>
+        </span>
+        <span>
+            <!-- Architect and Engineering Firm Details -->
+            <input type="text" id="architectName" name="architectName" placeholder="Architect Name" required>
+            <input type="text" id="engineerName" name="engineerName" placeholder="Engineering Firm Name" required><br>
+        </span>
+        <!-- Image Upload -->
+        <input type="file" id="projectImage" name="projectImage" accept="image/*" placeholder="Upload Image" style="width: 100%;"><br>
+    
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+    <script src="../js/add.js"></script>    
+</body>
+</html>
